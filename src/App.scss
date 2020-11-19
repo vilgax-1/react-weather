@@ -1,0 +1,15 @@
+*{
+    font-family:  Helvetica, sans-serif;
+}
+
+.container{
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #EEEDF1;
+    position: relative;
+    z-index: -1;
+    padding-top: 150px;
+}
