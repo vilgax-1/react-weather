@@ -17,7 +17,7 @@ export function Header(props) {
     const [asideMenu, setAsideMenu] = useState(false); 
     const [size] = useState(window.innerWidth);
    
-    const [formValues, handleInputChange ] = useForm({city: 'zapopan'});
+    const [formValues, handleInputChange ] = useForm({city: ''});
     const { city } = formValues;
 
     useEffect(()=>{
