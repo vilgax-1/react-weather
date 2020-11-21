@@ -15,6 +15,17 @@ export const fetchWheater = (town) => {
 }
 
 
+export const selectWeather = (dateSelected) =>{
+    return (dispatch)=>{
+        dispatch(date(dateSelected))
+    }
+}
+
+export const date = (date) => ({
+    type: type.date,
+    payload: date
+});
+
 export const weather = (uid, displayName) => ({
     type: type.weather,
     payload: {

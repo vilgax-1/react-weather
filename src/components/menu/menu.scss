@@ -1,4 +1,4 @@
-.countryName, .days {
+.country-name, .days, .country-date{
     font-size: 24px;
     font-weight: bold;
     color: #1A1A1A;
@@ -6,8 +6,19 @@
     margin: 0;
 }
 
+.heaven{
+    color: #2F94F5;
+    font-weight: bold;
+    font-size: 30px;
+    margin: 0;
+}
+
+.clouds-date{
+    font-size: 15px;
+}
+
 .logo{
-    width: 100%;
+    width: 100px;
     object-fit: contain;
     margin-bottom: 20px;
 }
@@ -26,8 +37,13 @@
     padding: 0 20%;
 }
 
-@media (max-width: 600px){
+
+@media (max-width: 750px){
     .panel-weather{
-        width: 80%;
+        width: 100%;
+        padding: 0;
+    }
+    .country-date, .country-name ,.panel-weather, .days{
+        text-align: center;
     }
 }
