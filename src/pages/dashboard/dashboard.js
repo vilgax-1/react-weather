@@ -3,6 +3,7 @@ import { useSelector } from 'react-redux';
 import {Cardweather} from '../../components/cardsWeather/cardWeather';
 import * as moment from 'moment';
 import './dashboard.scss';
+import arrow from '../../assets/icons/down-arrow-big.png';
 
 export const Dashboard = () => {
     const state = useSelector(state => state.weather);
@@ -12,6 +13,9 @@ export const Dashboard = () => {
         <div className="container-dashboard">
             <div className="panel-button row row-reverse">
                 <button className="btn btn-blue">Start new forecast</button>
+            </div>
+            <div className="celcius row row-reverse">
+                <p>C &deg; <img src={arrow}/></p>
             </div>
             <div className="panel-cards">
             { Object.keys(state).length > 0 ?
